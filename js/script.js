@@ -42,6 +42,7 @@ var geonames = L.tileLayer('https://samizdat.cz/tiles/ton_l2/{z}/{x}/{y}.png', {
 var map_right = L.map("map_right", {
     center: [49.7417517, 15.3350758],
     zoom: 7,
+    zoomControl: false,
     layers: [sentinel]
 });
 var map_left = L.map("map_left", {
