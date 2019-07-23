@@ -1,16 +1,16 @@
-title: "Data z mobilů:<br>Praha se denně nafoukne o polovinu, v centru jsou návštěvníci v převaze"
+title: "Kůrovec okouše stromy na souše"
 perex: "Skoro 140 tisíc lidí přijede do Prahy každý den za prací. Míří hlavně do kancelářských budov a do centra města. S nimi pak dorazí i přes půl milionu návštěvníků. Ukázala to analýza dat o pohybu mobilních telefonů, kterou si nyní město nechává zpracovat."
-coverimg: https://interaktivni.rozhlas.cz/brexit/media/cover.jpg
-coverimg_note: "Foto <a href='https://ctk.cz'>ČTK</a>"
-styles: []
-libraries: [] #jquery, d3, highcharts, datatables
-options: [noheader] #wide, noheader (, nopic)
+coverimg: https://www.irozhlas.cz/sites/default/files/styles/zpravy_snowfall/public/uploader/img_1949_180514-104913_haf.jpg?itok=yWc5q_Dz
+coverimg_note: "Foto Viktor Daněk"
+styles: ['https://unpkg.com/leaflet@1.5.1/dist/leaflet.css']
+libraries: [jquery, 'https://unpkg.com/leaflet@1.5.1/dist/leaflet.js', 'https://unpkg.com/esri-leaflet@2.3.0/dist/esri-leaflet.js', 'https://unpkg.com/leaflet.vectorgrid@latest/dist/Leaflet.VectorGrid.bundled.js', './lmapsync.js'] #jquery, d3, highcharts, datatables
+options: [] #wide, noheader (, nopic)
 ---
 <left>
 	<p>
-	<b>KAREL HYNEK MÁCHA</b>
+	<b>Satelitní snímky</b>
 	</p><p>
-	Karel Hynek Mácha (16. listopadu 1810 Praha-Malá Strana[1] – 6. listopadu 1836 Litoměřice[2]) byl český básník a prozaik, představitel českého romantismu a zakladatel moderní české poezie. Proslavil se jak svým životem, tak dílem, jemuž dominuje Máj (1836).
+	Satelitní snímky v pravé mapě pochází z družic Sentinel 2 a Landsat 8. A ač jde o nejaktuálnější volně dostupné záběry, nemusí vždy odpovídat realitě: satelit nad oblastní přeletí vždy za několik dní a snímky je následně nutné přenést a zpracovat.
 	</p>
 </left>
 
@@ -20,7 +20,20 @@ Naopak v noci se nejvíc lidí se "namačká" ve Vršovicích, jde o 430 osob na
 
 Detaily si můžete prohlédnout v následující mapě, kterou z dat mobilních operátorů zpracoval pražský [Institut plánování a rozvoje](http://www.iprpraha.cz/).
 
-<wide><i>Pokud vás zajímá, "kolik" lidí bývá ve dne a v noci ve vaší čtvrti, najděte si ji na mapě, přepněte se na časové řezy, vyberte přepínač hustota osob a potom pohybujte "posuvníkem" nahoře.</i></wide>
+<i>V levé mapě jsou <font color="blue">modře</font> označené lokality, kde proběhla těžba dřeva, <font color="red">červeně</font> jsou uschlé stromy z letošního dubna. Informace pochází z webu [Kurovcovamapa.cz](https://www.kurovcovamapa.cz/). Vpravo můžete následky porovnat na aktuálních satelitních snímcích.</i>
+
+<wide>
+<form action="?" id='frm-geocode'>
+	  <div class="inputs">
+	    <input type="text" id="inp-geocode" placeholder="Zadejte obec či adresu...">
+	    <input type="submit" id="inp-btn" value="Najít">
+	  </div>
+	</form>
+<div id="maps">
+    <div id="map_left"></div>
+    <div id="map_right"></div>
+</div>
+</wide>
 
 ## Data na prodej
 <right>
