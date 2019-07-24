@@ -2,8 +2,8 @@ title: "Kůrovec okouše stromy na souše"
 perex: "Skoro 140 tisíc lidí přijede do Prahy každý den za prací. Míří hlavně do kancelářských budov a do centra města. S nimi pak dorazí i přes půl milionu návštěvníků. Ukázala to analýza dat o pohybu mobilních telefonů, kterou si nyní město nechává zpracovat."
 coverimg: https://www.irozhlas.cz/sites/default/files/styles/zpravy_snowfall/public/uploader/img_1949_180514-104913_haf.jpg?itok=yWc5q_Dz
 coverimg_note: "Foto Viktor Daněk"
-styles: ['https://unpkg.com/leaflet@1.5.1/dist/leaflet.css']
-libraries: [jquery, 'https://unpkg.com/leaflet@1.5.1/dist/leaflet.js', 'https://unpkg.com/esri-leaflet@2.3.0/dist/esri-leaflet.js', 'https://unpkg.com/leaflet.vectorgrid@latest/dist/Leaflet.VectorGrid.bundled.js', './lmapsync.js'] #jquery, d3, highcharts, datatables
+styles: ['https://unpkg.com/leaflet@1.5.1/dist/leaflet.css', 'https://api.tiles.mapbox.com/mapbox-gl-js/v1.1.1/mapbox-gl.css']
+libraries: [jquery, 'https://unpkg.com/leaflet@1.5.1/dist/leaflet.js', 'https://unpkg.com/esri-leaflet@2.3.0/dist/esri-leaflet.js', 'https://unpkg.com/leaflet.vectorgrid@latest/dist/Leaflet.VectorGrid.bundled.js', 'https://api.tiles.mapbox.com/mapbox-gl-js/v1.1.1/mapbox-gl.js'] #jquery, d3, highcharts, datatables
 options: [] #wide, noheader (, nopic)
 ---
 <left>

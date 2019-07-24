@@ -13,30 +13,6 @@ var ortofoto = L.esri.tiledMapLayer({
   attribution: 'ČÚZK, data o těžbě kurovcovamapa.cz',
 });
 
-var suchy_19 = L.vectorGrid.protobuf('https://a.kurovcovamapa.cz/suchy-2019-04/{z}/{x}/{y}.pbf', {
-    vectorTileLayerName: 'deadwood201904',
-    vectorTileLayerStyles: {
-        suchy201904: {
-            color: '#d00000', weight: 2, opacity: .55, fillOpacity: .55, fill: true, fillColor: '#d00000'
-        }
-    },
-    maxZoom: 20,
-    subdomains: 'a',
-    rendererFactory: L.svg.tile
-});
-
-var tezba = L.vectorGrid.protobuf('https://a.kurovcovamapa.cz/tezba/{z}/{x}/{y}.pbf', {
-    vectorTileLayerName: 'baresoil',
-    vectorTileLayerStyles: {
-        suchy201904: {
-            color: '#0000d0', weight: 2, opacity: .55, fillOpacity: .55, fill: true, fillColor: '#0000d0'
-        }
-    },
-    maxZoom: 20,
-    subdomains: 'a',
-    rendererFactory: L.svg.tile
-});
-
 var geonames = L.tileLayer('https://samizdat.cz/tiles/ton_l2/{z}/{x}/{y}.png', {foo: 'bar', attribution: '&copy; přispěvatelé <a href="https://www.openstreetmap.org/">OpenStreetMap</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'});
 
 var map_right = L.map("map_right", {
@@ -45,17 +21,75 @@ var map_right = L.map("map_right", {
     zoomControl: false,
     layers: [sentinel]
 });
-var map_left = L.map("map_left", {
-    center: [49.7417517, 15.3350758],
-    zoom: 7,
-    layers: [ortofoto, suchy_19, tezba, geonames]
+
+const map_left = new mapboxgl.Map({
+  container: "map_left",
+  style: "https://data.irozhlas.cz/mapa-domu/map_styl/style.json",
+  zoom: 6,
+  maxZoom: 15,
+  pitch: 0,
+  attributionControl: false,
+  center: [15.3350758, 49.7417517],
 });
 
-map_right.scrollWheelZoom.disable();
-map_left.scrollWheelZoom.disable();
+  map_left.on('load', function() {
+    map_left.addLayer({
+      'id': 'wms-test-layer',
+      'type': 'raster',
+      'source': {
+        'type': 'raster',
+        'tiles': [
+          'https://geoportal.cuzk.cz/WMS_ORTOFOTO_PUB/service.svc/get?bbox={bbox-epsg-3857}&STYLES=&format=image/png&service=WMS&version=1.1.1&request=GetMap&srs=EPSG:3857&transparent=true&width=256&height=256&layers=GR_ORTFOTORGB'
+        ],
+        'tileSize': 256
+      },
+        'paint': {}
+    });
+    map_left.addLayer({ //těžba
+      id: "baresoil",
+      type: "fill",
+      source: {
+        type: "vector",
+        tiles: ["https://a.kurovcovamapa.cz/tezba/{z}/{x}/{y}.pbf"],
+      },
+      "source-layer": "tezba",
+      paint: {
+        "fill-color": "red",
+        "fill-opacity": 0.3,
+        "fill-outline-color": "red",
+      },
+    })
+    map_left.addLayer({ //suché
+      id: "deadwood201904",
+      type: "fill",
+      source: {
+        type: "vector",
+        tiles: ["https://a.kurovcovamapa.cz/suchy-2019-04/{z}/{x}/{y}.pbf"],
+      },
+      "source-layer": "suchy201904",
+      paint: {
+        "fill-color": "#d00000",
+        "fill-opacity": 0.3,
+        "fill-outline-color": "#d00000",
+      },
+    })
+    map_left.addLayer({
+      id: "labels",
+      source: {
+        tiles: [
+          "https://interaktivni.rozhlas.cz/tiles/ton_l2/{z}/{x}/{y}.png",
+        ],
+        type: "raster",
+        tileSize: 256,
+      },
+      type: "raster",
+    });
+  });
+     
+map_left.addControl(new mapboxgl.NavigationControl());
 
-map_left.sync(map_right);
-map_right.sync(map_left);
+map_right.scrollWheelZoom.disable();
+map_left.scrollZoom.disable();
 
 var locMarker = L.circleMarker([49.7417517, 15.3350758], {
     radius: 6,
@@ -65,15 +99,26 @@ var locMarker = L.circleMarker([49.7417517, 15.3350758], {
     fillOpacity: 0.7,
 }).addTo(map_right)
 
+
 map_left.on('mousemove', function(e) {
-    var updLoc = new L.LatLng((e.latlng.lat), (e.latlng.lng));
+    var updLoc = new L.LatLng((e.lngLat.lat), (e.lngLat.lng));
     locMarker.setLatLng(updLoc); 
 });
 
 map_left.on('click', function(e) {
-    var updLoc = new L.LatLng((e.latlng.lat), (e.latlng.lng));
+    var updLoc = new L.LatLng((e.lngLat.lat), (e.lngLat.lng));
     locMarker.setLatLng(updLoc); 
 });
+
+map_left.on('zoom', function() {
+  map_right.setZoom(Math.ceil(map_left.getZoom()) + 1);
+});
+
+map_left.on('move', function(e) { // poloha do url pro sdileni
+  var cen = map_left.getCenter().wrap();
+  map_right.panTo(new L.LatLng(cen.lat, cen.lng));
+});
+
 
 $("#inp-geocode").on("focus input", () => $("#inp-geocode").css("border-color", "black"));
 
