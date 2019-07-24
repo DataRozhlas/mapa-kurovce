@@ -8,13 +8,6 @@ var sentinel = L.esri.imageMapLayer({
   token: 'QJWyylEvaWIiItY896grB9qCkduY4MCBcYpLy-lJd2H-TA0s7L3iXAW535Xfnb_XKdUNWA3G7x3umnj6sC0PmZ2ou-wiFaU41Zs8epkOHR8UpTW-DtqEIzitzGbE9Ucdprv6jjABKC_eG3PF0uCiSA..',
 });
 
-var ortofoto = L.esri.tiledMapLayer({
-  url: 'https://ags.cuzk.cz/arcgis/rest/services/ortofoto_wm/MapServer',
-  attribution: 'ČÚZK, data o těžbě kurovcovamapa.cz',
-});
-
-var geonames = L.tileLayer('https://samizdat.cz/tiles/ton_l2/{z}/{x}/{y}.png', {foo: 'bar', attribution: '&copy; přispěvatelé <a href="https://www.openstreetmap.org/">OpenStreetMap</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'});
-
 var map_right = L.map("map_right", {
     center: [50.5843919, 14.7169664],
     zoom: 14,
@@ -31,6 +24,11 @@ const map_left = new mapboxgl.Map({
   attributionControl: false,
   center: [14.7169664, 50.5843919],
 });
+
+map_left.addControl(new mapboxgl.AttributionControl({
+  compact: true,
+  customAttribution: "ČÚZK, data o těžbě kurovcovamapa.cz, geonames a mapový podklad &copy; přispěvatelé <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a>, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>",
+}));
 
   map_left.on('load', function() {
     map_left.addLayer({

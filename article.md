@@ -1,26 +1,32 @@
-title: "Kůrovec okouše stromy na souše"
-perex: "Skoro 140 tisíc lidí přijede do Prahy každý den za prací. Míří hlavně do kancelářských budov a do centra města. S nimi pak dorazí i přes půl milionu návštěvníků. Ukázala to analýza dat o pohybu mobilních telefonů, kterou si nyní město nechává zpracovat."
-coverimg: https://www.irozhlas.cz/sites/default/files/styles/zpravy_snowfall/public/uploader/img_1949_180514-104913_haf.jpg?itok=yWc5q_Dz
-coverimg_note: "Foto Viktor Daněk"
+title: "Satelitní snímky ukazují, kde řádil kůrovec"
+perex: "Během loňského roku vzrostlo množství vytěženého dřeva o třetinu, na vině je kůrovcová kalamita. Podívejte se na aktuální satelitní snímky, kde jsou lesy suché nebo už úplně zmizely."
+coverimg: https://www.irozhlas.cz/sites/default/files/styles/zpravy_snowfall/public/uploader/kuuse-kooreurask_ja__190724-171033_cib.jpg?itok=mGs_MIJg
+coverimg_note: "Foto <a href=\"https://en.wikipedia.org/wiki/File:Kuuse-koore%C3%BCrask_ja_tegutsemisj%C3%A4ljed_Ips_typographus.jpg\">Tõnu Pani</a>"
 styles: ['https://unpkg.com/leaflet@1.5.1/dist/leaflet.css', 'https://api.tiles.mapbox.com/mapbox-gl-js/v1.1.1/mapbox-gl.css']
-libraries: [jquery, 'https://unpkg.com/leaflet@1.5.1/dist/leaflet.js', 'https://unpkg.com/esri-leaflet@2.3.0/dist/esri-leaflet.js', 'https://unpkg.com/leaflet.vectorgrid@latest/dist/Leaflet.VectorGrid.bundled.js', 'https://api.tiles.mapbox.com/mapbox-gl-js/v1.1.1/mapbox-gl.js'] #jquery, d3, highcharts, datatables
+libraries: [jquery, 'https://unpkg.com/leaflet@1.5.1/dist/leaflet.js', 'https://unpkg.com/esri-leaflet@2.3.0/dist/esri-leaflet.js', 'https://api.tiles.mapbox.com/mapbox-gl-js/v1.1.1/mapbox-gl.js'] #jquery, d3, highcharts, datatables
 options: [] #wide, noheader (, nopic)
 ---
+
+Sucho a s ním související kůrovcová kalamita. Tak [vysvětloval pro Radiožurnál](https://www.irozhlas.cz/ekonomika/kurovec-ceske-lesy-kalamita-tezba_1906160635_haf) Jiří Hrbek ze statistického úřadu, proč v loňském roce těžba dřeva dosáhla historického maxima.
+
+A podle Miroslava Svobody z dřevařské fakulty České zemědělské univerzity situace v dohledné době lepší nebude: „Mnozí vlastníci, přestože by podle zákona měli sanovat a zpracovávat, rezignovali na boj s kůrovcem. Ta situace není vůbec dobrá, a i přes ten relativně chladný květen to vypadá, že množství dřeva napadené kůrovcem bude letos podobné jako loni, ne-li výrazně vyšší,“ myslí si.
+
 <left>
 	<p>
 	<b>Satelitní snímky</b>
 	</p><p>
-	Satelitní snímky v pravé mapě pochází z družic Sentinel 2 a Landsat 8. A ač jde o nejaktuálnější volně dostupné záběry, nemusí vždy odpovídat realitě: satelit nad oblastní přeletí vždy za několik dní a snímky je následně nutné přenést a zpracovat.
+	Satelitní snímky v pravé mapě pochází z družic Sentinel 2 a Landsat 8. A ač jde o nejaktuálnější volně dostupné záběry, nemusí vždy odpovídat realitě: satelit nad oblastní přeletí vždy za několik dní a snímky je následně nutné přenést a zpracovat. 
+	<p>Aktualizaci někdy také zmaří počasí: Pokud je vysoká oblačnost, snímky jsou k ničemu a je třeba počkat na další oblet satelitu.</p>
 	</p>
 </left>
 
-Během dne se lidé v Praze soustřeďují v okolí administrativních center a obchodů, po poledni se tak nejvíc zahustí okolí Andělu, centrum Prahy (Vodičkova ulice a Petrské náměstí) a Brumlovka nedaleko Budějovické. Na poslední jmenované adrese sídlí řada velkých korporací, mezi nimi i Microsoft nebo ČEZ. Pro srovnání, na zmíněných místech je ve "špičce" okolo šesti stovek osob na jeden hektar, průměr Prahy je 25 obyvatel na [hektar](https://cs.wikipedia.org/wiki/Hektar) (Václavské náměstí má rozlohu asi 4 hektary).
+Právě jako podpora majitelům a správcům lesů vnikl projekt [Kůrovcová mapa](https://www.kurovcovamapa.cz/). Experti z [Ústavu pro hospodářskou úpravu lesů](http://www.uhul.cz/) zde pomocí satelitních snímků vytipovávají místa, kde hrozí šíření kůrovce smrkového _(Ips typographus)_. Rizikové lokality značí barvami do mapy a lesníci tak mohou snadno zjistit, která místa ve svém rajónu by měli zkontrolovat.
 
-Naopak v noci se nejvíc lidí se "namačká" ve Vršovicích, jde o 430 osob na hektar.
-
-Detaily si můžete prohlédnout v následující mapě, kterou z dat mobilních operátorů zpracoval pražský [Institut plánování a rozvoje](http://www.iprpraha.cz/).
+Kůrovcová mapa výsledky šetření zobrazuje na starší letecké mapě, není na ní tedy vidět, jak lesy vypadají nyní. Takový obrázek nabízí aktuální satelitní snímky z evropského družicového programu [Copernicus](https://www.copernicus.eu/en) a jeho amerického protějšku [Landsat](https://www.usgs.gov/land-resources/nli/landsat). 
 
 <i>V levé mapě jsou <font color="blue">modře</font> označené lokality, kde proběhla těžba dřeva, <font color="red">červeně</font> jsou uschlé stromy z letošního dubna. Informace pochází z webu [Kurovcovamapa.cz](https://www.kurovcovamapa.cz/). Vpravo můžete následky porovnat na aktuálních satelitních snímcích.</i>
+
+_Jako výchozí je na mapě přiblížená národní přírodní rezervace Břehyně - Pecopala, kde zásahy proti kůrovci [vyvolaly odpor ochránců přírody i odborné veřejnosti](https://www.irozhlas.cz/zpravy-domov/rezervace-kaceni-doksy-narodni-prirodni-rezervace_1904151152_pj)._
 
 <wide>
 <form action="?" id='frm-geocode'>
@@ -35,17 +41,8 @@ Detaily si můžete prohlédnout v následující mapě, kterou z dat mobilních
 </div>
 </wide>
 
-## Data na prodej
-<right>
-	<p>
-	<b>KAREL HYNEK MÁCHA</b>
-	</p><p>
-	Karel Hynek Mácha (16. listopadu 1810 Praha-Malá Strana[1] – 6. listopadu 1836 Litoměřice[2]) byl český básník a prozaik, představitel českého romantismu a zakladatel moderní české poezie. Proslavil se jak svým životem, tak dílem, jemuž dominuje Máj (1836).
-	</p>
-</right>
+## Nekrm kůrovce
 
-I pokud netelefonujeme nebo neposíláme SMS, telefon pravidelně komunikuje s vysílači v síti mobilního operátora. Z dat o síle signálu a použité anténě je možné odvodit, kde se přibližně telefon nachází a jak dlouhou dobu na místě strávil.
+Pomoci zejména menším správcům lesů se snaží i web [Nekrm brouka](http://www.nekrmbrouka.cz/). Kromě bezplatného poradenství na speciální lince nabízí návody jak šíření kůrovce včas odhalit a jak mu předcházet. Rovněž vlastníky upozorňuje, že mají zákonnou povinnost o les pečovat.
 
-Mobilní operátor má ["zákonnou povinnost"](https://www.zakonyprolidi.cz/cs/2005-127/zneni-20160919#p97-3) takové informace uchovávat, a to půl roku do minulosti, přistupovat k nim ale mohou jen bezpečnostní složky, typicky policie nebo rozvědka.
-
-Operátoři ale obdobné informace mohou anonymizovat (tedy "zbavit" identifikace konkrétního uživatele) a agregovat, tedy spojit informace o jednotlivcích do jakýchsi skupin. Výsledná obecná čísla pak přeprodávají dál, například marketingovým firmám či dopravním analytikům. Zpětně z nich nejde dovodit, kde se pohybuje každý jednotlivec, dávají ale určitý přehled o obecném chování obyvatel nějakého místa.
+Pro řadu majitelů je ale současná kalamita jen obtížně řešitelná a svých [pozemků se proto zbavují](https://www.irozhlas.cz/ekonomika/les-cr-na-prodej-sucho-kurovec-2018-2019_1901201235_ako). 
