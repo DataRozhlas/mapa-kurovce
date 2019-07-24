@@ -100,6 +100,9 @@ var locMarker = L.circleMarker([49.7417517, 15.3350758], {
 }).addTo(map_right)
 
 
+//var locMarkerL = new mapboxgl.Marker()
+//locMarkerL.addTo(map_left)
+
 map_left.on('mousemove', function(e) {
     var updLoc = new L.LatLng((e.lngLat.lat), (e.lngLat.lng));
     locMarker.setLatLng(updLoc); 
@@ -110,15 +113,22 @@ map_left.on('click', function(e) {
     locMarker.setLatLng(updLoc); 
 });
 
-map_left.on('zoom', function() {
+map_left.on('zoomend', function() {
   map_right.setZoom(Math.ceil(map_left.getZoom()) + 1);
 });
 
-map_left.on('move', function(e) { // poloha do url pro sdileni
+map_left.on('drag', function(e) { // poloha do url pro sdileni
   var cen = map_left.getCenter().wrap();
   map_right.panTo(new L.LatLng(cen.lat, cen.lng));
 });
 
+map_right.on('drag', function(e) {
+  //return
+  var cntr = map_right.getCenter();
+  map_left.flyTo({
+    center: [cntr.lng, cntr.lat]
+  });
+});
 
 $("#inp-geocode").on("focus input", () => $("#inp-geocode").css("border-color", "black"));
 
@@ -144,7 +154,10 @@ form.onsubmit = function submitForm(event) {
         $("#inp-geocode").css("border-color", "red");
         return;
       }
-      map_left.setView([y, x], 12);
+      map_left.flyTo({
+        center: [x, y],
+        zoom: 12,
+      });
     }, "xml");
   }
 };
