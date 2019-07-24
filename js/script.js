@@ -16,8 +16,8 @@ var ortofoto = L.esri.tiledMapLayer({
 var geonames = L.tileLayer('https://samizdat.cz/tiles/ton_l2/{z}/{x}/{y}.png', {foo: 'bar', attribution: '&copy; přispěvatelé <a href="https://www.openstreetmap.org/">OpenStreetMap</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'});
 
 var map_right = L.map("map_right", {
-    center: [49.7417517, 15.3350758],
-    zoom: 7,
+    center: [50.5843919, 14.7169664],
+    zoom: 14,
     zoomControl: false,
     layers: [sentinel]
 });
@@ -25,11 +25,11 @@ var map_right = L.map("map_right", {
 const map_left = new mapboxgl.Map({
   container: "map_left",
   style: "https://data.irozhlas.cz/mapa-domu/map_styl/style.json",
-  zoom: 6,
-  maxZoom: 15,
+  zoom: 13,
+  //maxZoom: 17,
   pitch: 0,
   attributionControl: false,
-  center: [15.3350758, 49.7417517],
+  center: [14.7169664, 50.5843919],
 });
 
   map_left.on('load', function() {
@@ -54,9 +54,9 @@ const map_left = new mapboxgl.Map({
       },
       "source-layer": "tezba",
       paint: {
-        "fill-color": "red",
-        "fill-opacity": 0.3,
-        "fill-outline-color": "red",
+        "fill-color": "#08519c",
+        "fill-opacity": 0.8,
+        "fill-outline-color": "#08519c",
       },
     })
     map_left.addLayer({ //suché
@@ -69,7 +69,7 @@ const map_left = new mapboxgl.Map({
       "source-layer": "suchy201904",
       paint: {
         "fill-color": "#d00000",
-        "fill-opacity": 0.3,
+        "fill-opacity": 0.8,
         "fill-outline-color": "#d00000",
       },
     })
@@ -90,6 +90,16 @@ map_left.addControl(new mapboxgl.NavigationControl());
 
 map_right.scrollWheelZoom.disable();
 map_left.scrollZoom.disable();
+
+map_left.on('click', function() {
+  map_right.scrollWheelZoom.enable();
+  map_left.scrollZoom.enable();
+})
+
+map_right.on('click', function() {
+  map_right.scrollWheelZoom.enable();
+  map_left.scrollZoom.enable();
+})
 
 var locMarker = L.circleMarker([49.7417517, 15.3350758], {
     radius: 6,
@@ -117,7 +127,7 @@ map_left.on('zoomend', function() {
   map_right.setZoom(Math.ceil(map_left.getZoom()) + 1);
 });
 
-map_left.on('drag', function(e) { // poloha do url pro sdileni
+map_left.on('move', function(e) { // poloha do url pro sdileni
   var cen = map_left.getCenter().wrap();
   map_right.panTo(new L.LatLng(cen.lat, cen.lng));
 });
