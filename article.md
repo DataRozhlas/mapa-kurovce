@@ -40,8 +40,39 @@ _Jako výchozí je na mapě přiblížená národní přírodní rezervace Břeh
     <div id="map_right"></div>
 </div>
 </wide>
+<p></p>
 
-## Nekrm kůrovce
+## Kůrovec v hlavním městě
+
+Kalamita v podobě kůrovce neminula ani hlavní město. [Z pražských lesů muselo být vykáceno přes 2600 kubíků napadených stromů](https://www.irozhlas.cz/zpravy-domov/kurovec-praha-lazne-sverenske-fondy-nezamestnanost-prehled-tisku_1903060745_dbr). Stejně jako v celé republice, tak i v Praze může za šíření kůrovce především loňské suché jaro a léto. I přesto, že se kůrovec šíří rychle, v Praze zatím nejde o kalamitní stav.
+
+V Praze brouci napadali spíš jednotlivé stromy v různých lokalitách a v porovnání s ostatními postiženými oblastmi je hlavní město hluboce pod průměrem, jak uvedla mluvčí Lesů hlavního města Prahy Petra Fišerová.
+
+![Kůrovec v hlavním městě](https://www.irozhlas.cz/sites/default/files/styles/zpravy_fotogalerie_medium/public/uploader/praha_190725-124133_sle.PNG?itok=EKuP8Y3_)
+
+## Orlické hory i Krkonoše
+
+Několik tisíc hektarů lesa v CHKO Orlické hory ohrožuje kůrovcová kalamita. Situaci místních lesů považují vlastníci za vážnou. „Orlické hory jsou v kalamitní zóně. Ohrožení lesa (kůrovcem) v Orlických horách je s ohledem na jeho strukturu a zastoupení dřevin vysoké,“ sdělil Martin Fojt ze Správy Kolowratských lesů, která hospodaří na téměř 5400 hektarech lesa. Téměř 90 procent této výměry leží na území CHKO Orlické hory.
+
+Kůrovec ale ohrožuje i těžbu dřeva v předhoří, což je navazující oblast na Orlické hory, kde činí zasažená oblast okolo 20 procent. Těžba dřeva tak [dramaticky vzrostla a prodejní cena klesla dolů](https://www.irozhlas.cz/zpravy-domov/kurovec-kalamita-orlicke-hory-kolowratske-lesy-lesy-cr-kristina-colloredo_1905290646_dbr). Lesníci proto mají problémy s odbytem a tato situace způsobuje ekonomické problémy zejména soukromníkům. 
+
+![Orlické hory zasažené kůrovcem](https://www.irozhlas.cz/sites/default/files/styles/zpravy_fotogalerie_medium/public/uploader/orlicke_190725-122108_sle.PNG?itok=TUolLTHP)
+
+Krkonošský národní park v roce 2018 vytěžil výrazně více kůrovcového dřeva než v minulých letech. [Důvodem byl nejen kůrovec ale i větrná kalamita](https://www.irozhlas.cz/zpravy-domov/krkonose-krnap-drevo-tezba-kurovec-kalamita_1812301019_dp), která les na podzim roku 2017 zasáhla. Kůrovec neboli lýkožrout smrkový je přirozenou součástí přírody a cílem není ho vyhubit, ale předcházet jeho přemnožení.
+
+Mluvčí Správy Krkonošského národního parku (KRNAP) Radek Drahný uvedl, že přestože problémy s kůrovcem byly v uplynulém roce v Krkonoších větší než v minulých letech, nelze to označovat za kalamitu. Krkonoše mají oproti ostatním podhorským oblastem výhodu, že je v horách chladnější a vlhčí počasí a lesy se tak rychleji obnovují.
+
+![Rekordní těžba kůrovcového dřeva v Krkonoších](https://www.irozhlas.cz/sites/default/files/styles/zpravy_fotogalerie_medium/public/uploader/krkonose_190725-130737_sle.PNG?itok=69eCic8L)
+
+## Rezervace Suchý Vrch zasáhla proti kůrovci
+
+Rezervace Suchý Vrch u Vrbna pod Pradědem je chráněná zejména díky borovicím starým přes 300 let, zároveň je významným paleontologickým nalezištěm. Když minulý rok rezervaci napadl kůrovec, majitel požádal o povolení výjimky k zásahu proti škůdci a správa mu vyhověla.
+
+„Určitě občasné pokácení nějakých smrků není na škodu, právě naopak. Vznikne tímto prostor pro přirozené druhové skladby, to znamená buků, jedlí, javorů,“ [uvádí lesník Miroslav Havira.]( https://www.irozhlas.cz/zpravy-domov/kurovec-suchy-vrch-jeseniky_1812121751_jak) Citlivě vybrané a šetrně pokácené smrky mohou prý paradoxně pomoci i zdejší přírodě.
+
+![Rezervace Suchý Vrch zasáhla proti kůrovci](https://www.irozhlas.cz/sites/default/files/styles/zpravy_fotogalerie_medium/public/uploader/suchy_vrch_190725-133539_sle.PNG?itok=23g9Hog2)
+
+## Nekrm brouka
 
 Pomoci zejména menším správcům lesů se snaží i web [Nekrm brouka](http://www.nekrmbrouka.cz/). Kromě bezplatného poradenství na speciální lince nabízí návody jak šíření kůrovce včas odhalit a jak mu předcházet. Rovněž vlastníky upozorňuje, že mají zákonnou povinnost o les pečovat.
 
