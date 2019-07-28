@@ -1,5 +1,5 @@
 title: "Satelitní snímky ukazují, kde řádil kůrovec"
-perex: "Během loňského roku vzrostlo množství vytěženého dřeva o třetinu, na vině je kůrovcová kalamita. Podívejte se na aktuální satelitní snímky, kde jsou lesy suché nebo už úplně zmizely."
+perex: "Během loňského roku vzrostlo množství vytěženého dřeva o třetinu, na vině je kůrovcová kalamita. Podívejte se na aktuální satelitní snímky, kde jsou lesy suché případně už úplně zmizely."
 coverimg: https://www.irozhlas.cz/sites/default/files/styles/zpravy_snowfall/public/uploader/kuuse-kooreurask_ja__190724-171033_cib.jpg?itok=mGs_MIJg
 coverimg_note: "Foto <a href=\"https://en.wikipedia.org/wiki/File:Kuuse-koore%C3%BCrask_ja_tegutsemisj%C3%A4ljed_Ips_typographus.jpg\">Tõnu Pani</a>"
 styles: ['https://unpkg.com/leaflet@1.5.1/dist/leaflet.css', 'https://api.tiles.mapbox.com/mapbox-gl-js/v1.1.1/mapbox-gl.css']
@@ -7,9 +7,9 @@ libraries: [jquery, 'https://unpkg.com/leaflet@1.5.1/dist/leaflet.js', 'https://
 options: [] #wide, noheader (, nopic)
 ---
 
-Sucho a s ním související kůrovcová kalamita. Tak [vysvětloval pro Radiožurnál](https://www.irozhlas.cz/ekonomika/kurovec-ceske-lesy-kalamita-tezba_1906160635_haf) Jiří Hrbek ze statistického úřadu, proč v loňském roce těžba dřeva dosáhla historického maxima.
+Sucho a s ním související kůrovcová kalamita. Tak [vysvětloval pro Radiožurnál](https://www.irozhlas.cz/ekonomika/kurovec-ceske-lesy-kalamita-tezba_1906160635_haf) Jiří Hrbek ze statistického úřadu, proč loni těžba dřeva dosáhla historického maxima.
 
-A podle Miroslava Svobody z dřevařské fakulty České zemědělské univerzity situace v dohledné době lepší nebude: „Mnozí vlastníci, přestože by podle zákona měli sanovat a zpracovávat, rezignovali na boj s kůrovcem. Ta situace není vůbec dobrá, a i přes ten relativně chladný květen to vypadá, že množství dřeva napadené kůrovcem bude letos podobné jako loni, ne-li výrazně vyšší,“ myslí si.
+A podle Miroslava Svobody z dřevařské fakulty České zemědělské univerzity v Praze situace v dohledné době lepší nebude. „Mnozí vlastníci, přestože by podle zákona měli sanovat a zpracovávat, rezignovali na boj s kůrovcem. Ta situace není vůbec dobrá, a i přes relativně chladný květen to vypadá, že množství dřeva napadené kůrovcem bude letos podobné jako loni, ne-li výrazně vyšší,“ myslí si.
 
 <left>
 	<p>
@@ -46,13 +46,13 @@ _Jako výchozí je na mapě přiblížená národní přírodní rezervace Břeh
 
 Kalamita v podobě kůrovce neminula ani hlavní město. [Z pražských lesů muselo být vykáceno přes 2600 kubíků napadených stromů](https://www.irozhlas.cz/zpravy-domov/kurovec-praha-lazne-sverenske-fondy-nezamestnanost-prehled-tisku_1903060745_dbr). Stejně jako v celé republice, tak i v Praze může za šíření kůrovce především loňské suché jaro a léto. I přesto, že se kůrovec šíří rychle, v Praze zatím nejde o kalamitní stav.
 
-V Praze brouci napadali spíš jednotlivé stromy v různých lokalitách a v porovnání s ostatními postiženými oblastmi je hlavní město hluboce pod průměrem, jak uvedla mluvčí Lesů hlavního města Prahy Petra Fišerová.
+Brouci v metropoli napadali spíš jednotlivé stromy v různých lokalitách a v porovnání s ostatními postiženými oblastmi je hlavní město hluboce pod průměrem, jak uvedla mluvčí Lesů hlavního města Prahy Petra Fišerová.
 
 ## Orlické hory i Krkonoše
 
-Několik tisíc hektarů lesa v CHKO Orlické hory ohrožuje kůrovcová kalamita. Situaci místních lesů považují vlastníci za vážnou. „Orlické hory jsou v kalamitní zóně. Ohrožení lesa (kůrovcem) v Orlických horách je s ohledem na jeho strukturu a zastoupení dřevin vysoké,“ sdělil Martin Fojt ze Správy Kolowratských lesů, která hospodaří na téměř 5400 hektarech lesa. Téměř 90 procent této výměry leží na území CHKO Orlické hory.
+Několik tisíc hektarů lesa v CHKO Orlické hory ohrožuje kůrovcová kalamita. Situaci místních lesů považují vlastníci za vážnou. „Orlické hory jsou v kalamitní zóně. Ohrožení lesa (kůrovcem) v Orlických horách je s ohledem na jeho strukturu a zastoupení dřevin vysoké,“ sdělil ČTK Martin Fojt ze Správy Kolowratských lesů, která hospodaří na téměř 5400 hektarech lesa. Téměř 90 procent této výměry leží na území CHKO Orlické hory.
 
-Kůrovec ale ohrožuje i těžbu dřeva v předhoří, což je navazující oblast na Orlické hory, kde činí zasažená oblast okolo 20 procent. Těžba dřeva tak [dramaticky vzrostla a prodejní cena klesla dolů](https://www.irozhlas.cz/zpravy-domov/kurovec-kalamita-orlicke-hory-kolowratske-lesy-lesy-cr-kristina-colloredo_1905290646_dbr). Lesníci proto mají problémy s odbytem a tato situace způsobuje ekonomické problémy zejména soukromníkům. 
+Kůrovec ale ohrožuje i těžbu dřeva v předhoří, což je navazující oblast na Orlické hory, kde činí zasažená oblast okolo 20 procent. Těžba dřeva tak [dramaticky vzrostla a prodejní cena klesla](https://www.irozhlas.cz/zpravy-domov/kurovec-kalamita-orlicke-hory-kolowratske-lesy-lesy-cr-kristina-colloredo_1905290646_dbr). Lesníci proto mají problémy s odbytem a tato situace způsobuje ekonomické problémy zejména soukromníkům. 
 
 ![Orlické hory zasažené kůrovcem](https://www.irozhlas.cz/sites/default/files/styles/zpravy_fotogalerie_medium/public/uploader/orlhory_komari_vrch_190725-164416_cib.jpg?itok=ZbcX6ALx)
 
@@ -70,6 +70,6 @@ Rezervace Suchý Vrch u Vrbna pod Pradědem je chráněná zejména díky borovi
 
 ## Nekrm brouka
 
-Pomoci zejména menším správcům lesů se snaží i web [Nekrm brouka](http://www.nekrmbrouka.cz/). Kromě bezplatného poradenství na speciální lince nabízí návody jak šíření kůrovce včas odhalit a jak mu předcházet. Rovněž vlastníky upozorňuje, že mají zákonnou povinnost o les pečovat.
+Pomoci zejména menším správcům lesů se snaží i web [Nekrm brouka](http://www.nekrmbrouka.cz/). Kromě bezplatného poradenství na speciální lince nabízí návody, jak šíření kůrovce včas odhalit a jak mu předcházet. Rovněž vlastníky upozorňuje, že mají zákonnou povinnost o les pečovat.
 
 Pro řadu majitelů je ale současná kalamita jen obtížně řešitelná a svých [pozemků se proto zbavují](https://www.irozhlas.cz/ekonomika/les-cr-na-prodej-sucho-kurovec-2018-2019_1901201235_ako). 
