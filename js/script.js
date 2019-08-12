@@ -5,7 +5,7 @@ byeIE();
 var sentinel = L.esri.imageMapLayer({
   url: 'https://sentinel.arcgis.com/arcgis/rest/services/Sentinel2/ImageServer',
   attribution: 'United States Geological Survey (USGS), National Aeronautics and Space Administration (NASA)',
-  token: 'QJWyylEvaWIiItY896grB9qCkduY4MCBcYpLy-lJd2H-TA0s7L3iXAW535Xfnb_XKdUNWA3G7x3umnj6sC0PmZ2ou-wiFaU41Zs8epkOHR8UpTW-DtqEIzitzGbE9Ucdprv6jjABKC_eG3PF0uCiSA..',
+  token: 'RulRBd0BfH3ITyztWyPYeZQp066GhZDjCRUWCSPN24GhakyOADY2HsrPYJTXvVEVAHfdwovx8xAtL9dP3NSuwGzNKSvU8wzGFK5EKAKLec5JOx-Q7tWA-FCemW5mpWC0l_Cg82sv8HbuhMnORiWxVQ..',
 });
 
 var map_right = L.map("map_right", {
